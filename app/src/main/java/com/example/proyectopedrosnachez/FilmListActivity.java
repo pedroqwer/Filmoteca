@@ -1,4 +1,4 @@
-package com.example.ejercicioentregapedro;
+package com.example.proyectopedrosnachez;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -30,19 +30,19 @@ public class FilmListActivity extends ArrayAdapter<Film> {
 
         TextView titulo=mi.findViewById(R.id.titulo);
         TextView director=mi.findViewById(R.id.director);
-        TextView genero =mi.findViewById(R.id.genero);
-        TextView anyo=mi.findViewById(R.id.anyo);
-        TextView formato=mi.findViewById(R.id.formato);
+        //TextView genero =mi.findViewById(R.id.genero);
+        //TextView anyo=mi.findViewById(R.id.anyo);
+        //TextView formato=mi.findViewById(R.id.formato);
         ImageView foto=mi.findViewById(R.id.img);
-        TextView enlaceF=mi.findViewById(R.id.enlace);
-        TextView comentario=mi.findViewById(R.id.comntario);
+        //TextView enlaceF=mi.findViewById(R.id.enlace);
+        //TextView comentario=mi.findViewById(R.id.comntario);
 
         String tituliP=films.get(position).getTitle();
         titulo.setText(tituliP);
 
         String directorP=films.get(position).getDirector();
         director.setText(directorP);
-
+/*
         int generoP=films.get(position).getGenre();
         genero.setText(generoP);
 
@@ -51,16 +51,17 @@ public class FilmListActivity extends ArrayAdapter<Film> {
 
         int formatoP=films.get(position).getFormat();
         formato.setText(formatoP);
-
+*/
         int fotoP=films.get(position).getImageResId();
         foto.setImageResource(fotoP);
-
+/*
         String enlaceP=films.get(position).getImdbUrl();
         enlaceF.setText(enlaceP);
 
         String comentarioP=films.get(position).getComments();
-        comentario.setText(comentarioP);
+        comentario.setText(comentarioP);*/
 
         return  mi;
     }
 }
+

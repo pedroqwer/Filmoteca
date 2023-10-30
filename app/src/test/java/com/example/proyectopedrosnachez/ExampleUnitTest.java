@@ -1,4 +1,4 @@
-package com.example.ejercicioentregapedro;
+package com.example.proyectopedrosnachez;
 
 import org.junit.Test;
 

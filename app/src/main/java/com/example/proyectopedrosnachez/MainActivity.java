@@ -1,13 +1,8 @@
-package com.example.ejercicioentregapedro;
+package com.example.proyectopedrosnachez;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,12 +12,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //FilmDataSource.Initialize();
-       // ListView lista=(ListView) findViewById(R.id.listasss);
-    //    FilmListActivity filmListActivity=new FilmListActivity(this,R.layout.mostrarlaspelis, FilmDataSource.films);
+        FilmDataSource.Initialize();
+        ListView lista=(ListView) findViewById(R.id.listaa);
+        FilmListActivity filmListActivity=new FilmListActivity(this,R.layout.mostrar, FilmDataSource.films);
 
-      ///  lista.setAdapter(filmListActivity);
-        Button button=findViewById(R.id.boton1);
+        lista.setAdapter(filmListActivity);
+
+        /*
+        *  Button button=findViewById(R.id.boton1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +32,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
-        });
+        });*/
     }
 }

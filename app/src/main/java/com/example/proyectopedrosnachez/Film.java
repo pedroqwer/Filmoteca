@@ -1,4 +1,4 @@
-package com.example.ejercicioentregapedro;
+package com.example.proyectopedrosnachez;
 
 public class Film {
     // Tipos de formatos
@@ -97,4 +97,5 @@ public class Film {
     public void setComments(String comments) {
         this.comments = comments;
     }
+
 }

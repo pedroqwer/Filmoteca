@@ -4,71 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/NombreCreador"
-        android:layout_width="177dp"
-        android:layout_height="82dp"
-        android:background="#AE1919"
-        android:shadowColor="#00BCD4"
-        android:text="Creado por Pedro Sánchez"
-        android:textAlignment="center"
-        android:textColor="#0EE817"
-        android:textSize="20sp"
+    <ListView
+        android:id="@+id/listaa"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Descripción del logotipo"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NombreCreador"
-        app:layout_constraintVertical_bias="0.111" />
-
-    <Button
-        android:id="@+id/boton1"
-        android:layout_width="229dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="36dp"
-        android:text="Ir al sitio web"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/boton3"
-        android:layout_width="229dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="20dp"
-        android:text="Volver"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boton2"
-        app:layout_constraintVertical_bias="0.282" />
-
-    <Button
-        android:id="@+id/boton2"
-        android:layout_width="229dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="28dp"
-        android:text="Obtener soporte"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boton1" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
