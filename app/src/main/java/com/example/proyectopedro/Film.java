@@ -1,4 +1,4 @@
-package com.example.proyectopedrosnachez;
+package com.example.proyectopedro;
 
 public class Film {
     // Tipos de formatos
@@ -99,3 +99,4 @@ public class Film {
     }
 
 }
+

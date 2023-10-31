@@ -1,4 +1,4 @@
-package com.example.proyectopedrosnachez;
+package com.example.proyectopedro;
 
 import org.junit.Test;
 

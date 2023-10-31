@@ -1,4 +1,4 @@
-package com.example.proyectopedrosnachez;
+package com.example.proyectopedro;
 
 import android.content.Context;
 import android.view.LayoutInflater;
