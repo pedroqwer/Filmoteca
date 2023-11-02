@@ -47,5 +47,12 @@ public class AboutActivity extends AppCompatActivity {
                 }
             }
         });
+        //boton 3
+      //  Button boton3=findViewById(R.id.boton3);
+        //boton3.setOnClickListener(new View.OnClickListener() {
+           // @Override
+
+
     }
+
 }
