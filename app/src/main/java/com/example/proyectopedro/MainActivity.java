@@ -15,7 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         FilmDataSource.Initialize();
         ListView lista=(ListView) findViewById(R.id.listaa);
         FilmListActivity filmListActivity=new FilmListActivity(this,R.layout.mostrar, FilmDataSource.films);
+        lista.setAdapter(filmListActivity);
+        lista.setOnItemClickListener(this);
         // Enlace
         /* lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -52,11 +54,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
 */
-        lista.setAdapter(filmListActivity);
 
         // ArrayAdapter<Film> adapter=new ArrayAdapter<Film>(this,R.layout.activity_film_data);
 
 
+
+    }
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        // Acción al clickar sobre un elemento determinado
+        Intent intent = new Intent(MainActivity.this, FilmDataActivity.class);
+        intent.putExtra("CIUDAD_POSITION", position);
+        Toast.makeText(getApplicationContext(),"Elemento selecionado "+position, Toast.LENGTH_LONG).show();
+        if (intent.resolveActivity(getPackageManager()) != null){
+            startActivity(intent);
+        }
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){

@@ -20,7 +20,7 @@ public class AboutActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url="hub.com/pedroqwer/FilmotecaPedroSanchezBoix";
+                String url="";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
@@ -33,11 +33,11 @@ public class AboutActivity extends AppCompatActivity {
         });
 
         //Boton 2
-        Button button2=findViewById(R.id.boton1);
+        Button button2=findViewById(R.id.boton2);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url="https://mail.google.com/mail/u/0/#inbox";
+                String url="";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
