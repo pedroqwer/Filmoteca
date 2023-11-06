@@ -1,21 +1,18 @@
-package com.example.proyectopedro;
+package com.example.proyecto;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Movie;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener  {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,36 +24,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         FilmListActivity filmListActivity=new FilmListActivity(this,R.layout.mostrar, FilmDataSource.films);
         lista.setAdapter(filmListActivity);
         lista.setOnItemClickListener(this);
-        // Enlace
-        /* lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Movie selectedMovie = movieList.get(position); // Obtener la película seleccionada
-                Intent intent = new Intent(MainActivity.this, FilmDataActivity.class);
-                intent.putExtra("movie", selectedMovie); // Pasa la película seleccionada a la próxima actividad
-                startActivity(intent);
-            }
-
-           @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Movie selectedMovie = movieList.get(position); // Obtener la película seleccionada
-                Intent intent = new Intent(MainActivity.this, FilmDataActivity.class);
-                intent.putExtra("movie", selectedMovie); // Pasa la película seleccionada a la próxima actividad
-                startActivity(intent);
-            }
-        });
-
-        Intent intent = new Intent(this, FilmDataActivity.class);
-        boolean position = false;
-        intent.putExtra("FILM_POSITION",position);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
-
-*/
-
-        // ArrayAdapter<Film> adapter=new ArrayAdapter<Film>(this,R.layout.activity_film_data);
-
 
 
     }

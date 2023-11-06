@@ -1,4 +1,4 @@
-package com.example.proyectopedro;
+package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,13 +14,12 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-
         //Boton 1
-        Button button=findViewById(R.id.boton1);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button1=findViewById(R.id.boton1);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url="";
+                String url="https://github.com/pedroqwer/FilmotecaPedroSanchezBoix";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
@@ -34,10 +33,10 @@ public class AboutActivity extends AppCompatActivity {
 
         //Boton 2
         Button button2=findViewById(R.id.boton2);
-        button.setOnClickListener(new View.OnClickListener(){
+        button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String url="";
+                String url="https://mail.google.com/mail/u/0/#inbox";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
@@ -48,9 +47,9 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
         //boton 3
-      //  Button boton3=findViewById(R.id.boton3);
+        //  Button boton3=findViewById(R.id.boton3);
         //boton3.setOnClickListener(new View.OnClickListener() {
-           // @Override
+        // @Override
 
 
     }
