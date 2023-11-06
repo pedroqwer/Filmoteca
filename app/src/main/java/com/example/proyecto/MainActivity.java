@@ -31,12 +31,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         // Acción al clickar sobre un elemento determinado
         Intent intent = new Intent(MainActivity.this, FilmDataActivity.class);
-        intent.putExtra("CIUDAD_POSITION", position);
+        intent.putExtra("FILM_POSITION", position);
         Toast.makeText(getApplicationContext(),"Elemento selecionado "+position, Toast.LENGTH_LONG).show();
         if (intent.resolveActivity(getPackageManager()) != null){
             startActivity(intent);
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu,menu);

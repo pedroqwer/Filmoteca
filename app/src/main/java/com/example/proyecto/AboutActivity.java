@@ -24,9 +24,8 @@ public class AboutActivity extends AppCompatActivity {
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
 
-                if (intent.resolveActivity(getPackageManager())!=null){
                     startActivity(intent);
-                }
+
 
             }
         });
@@ -41,9 +40,8 @@ public class AboutActivity extends AppCompatActivity {
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
 
-                if (intent.resolveActivity(getPackageManager())!=null){
                     startActivity(intent);
-                }
+
             }
         });
         //boton 3
