@@ -20,7 +20,7 @@ public class FilmDataActivity extends AppCompatActivity {
 
     Button editar;
 
-    //ArrayList<Film> films=FilmDataSource.films;
+
 
     private Film film;
 
@@ -65,10 +65,10 @@ public class FilmDataActivity extends AppCompatActivity {
         any.setText(String.valueOf(film.getYear()));
 
         TextView form=findViewById(R.id.F);
-        form.setText(String.valueOf(film.getFormat()));
+        form.setText(Formato(film.getFormat()));
 
         TextView gen=findViewById(R.id.G);
-        gen.setText(String.valueOf(film.getGenre()));
+        gen.setText(Genero(film.getGenre()));
 
 
 
@@ -102,6 +102,37 @@ public class FilmDataActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    private String Genero(int genre) {
+        switch (genre){
+            case Film.GENRE_ACTION:
+                return "Accion";
+            case Film.GENRE_COMEDY:
+                return "Comedia";
+            case Film.GENRE_DRAMA:
+                return "Drama";
+            case Film.GENRE_HORROR:
+                return "Horror";
+            case Film.GENRE_SCIFI:
+                return "Scifi";
+            default:
+                return "desconocido";
+        }
+    }
+
+    private String Formato(int format) {
+      switch (format){
+          case  Film.FORMAT_DVD:
+              return "DVD";
+          case  Film.FORMAT_BLURAY:
+              return  "Bluray";
+          case  Film.FORMAT_DIGITAL:
+              return "Digital";
+          default:
+              return "desconocido";
+      }
 
     }
 }

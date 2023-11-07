@@ -25,18 +25,7 @@ public class FilmListActivity extends ArrayAdapter<Film>  {
         rr=resource;
         films=objects;
     }
-    /*
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // Acción al clickar sobre un elemento determinado
-        Intent intent = new Intent(this, FilmDataActivity.class);
-        intent.putExtra("CIUDAD_POSITION", position);
-        Toast.makeText(getApplicationContext(),"Elemento selecionado "+position, Toast.LENGTH_LONG).show();
-        if (intent.resolveActivity(getPackageManager()) != null){
-            startActivity(intent);
-        }
-    }
-*/
+
 
     @NonNull
     @Override

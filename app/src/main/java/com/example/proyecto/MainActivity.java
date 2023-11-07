@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             return true;
         }else if (id==R.id.opcion2){
             Toast.makeText(getApplicationContext(),"Has pulsado añadir peliculas",Toast.LENGTH_LONG).show();
-            Intent si=new Intent(this,FilmDataActivity.class);
-            startActivity(si);
+            //Intent si=new Intent();
+            //startActivity(si);
             return true;
         }
 

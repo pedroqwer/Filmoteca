@@ -8,7 +8,7 @@ public class FilmDataSource {
 
         films=new ArrayList<>();
 
-        films.add(new Film(R.drawable.endgamee,"End Game","Anthony y Joe Russo",2019,1,2,"https://www.imdb.com/title/tt4154796/?ref_=hm_tpks_tt_i_6_pd_tp1_pbr_ic","Los vengadores viajan en el tiempo para recuperar las gemas del infinito y poder derrotar a Thanos"));
+        films.add(new Film(R.drawable.endgamee,"End Game","Anthony y Joe Russo",2019,0,2,"https://www.imdb.com/title/tt4154796/?ref_=hm_tpks_tt_i_6_pd_tp1_pbr_ic","Los vengadores viajan en el tiempo para recuperar las gemas del infinito y poder derrotar a Thanos"));
         films.add(new Film(R.drawable.inter,"Interstellar","Christopher Nolan",2014,3,2,"http://www.imdb.com/title/tt0816692","Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento por asegurar la supervivencia de la humanidad."));
         films.add(new Film(R.drawable.regresoalfuturo,"Back to the future","Robert Zemeckis",1985,3,2,"http://www.imdb.com/title/tt0088763","Marty McFly, es enviado 30 años al pasado en un viaje en el tiempo en el DeLorean"));
         films.add(new Film(R.drawable.oppenheimer,"Oppenheimer","Christopher Nolan",2023,2,2,"https://www.imdb.com/title/tt15398776/?ref_=hm_tpks_tt_i_3_pd_tp1_pbr_ic","Oppenheimer es una pelicula biográfica de suspenso británicoestadounidense de 2023, escrita y dirigida por Christopher Nolan. Basada en American Prometheus, una biografía de 2005 escrita por Kai Bird y Martin J."));
@@ -28,7 +28,7 @@ public class FilmDataSource {
         films.add(new Film(R.drawable.cor2,"El corredor del laberinto : Las pruebas ","Wes Ball",2015,0,0,"https://www.imdb.com/title/tt4046784/?ref_=nv_sr_srsg_3_tt_4_nm_0_q_corredor%2520del%2520laberinto","Tras haber escapado del laberinto, los habitantes del área se enfrentan ahora a una nueva serie de retos en los caminos de un paisaje desolado lleno de obstáculos inimaginables."));
         films.add(new Film(R.drawable.co3,"El corredor del laberinto : La cura mortal","Wes Ball",2018,0,0,"https://www.imdb.com/title/tt4500922/?ref_=nv_sr_srsg_7_tt_8_nm_0_q_El%2520corredor%2520del%2520laberinto","Thomas, un heroico joven, emprende una misión para encontrar una cura para una enfermedad mortal conocida como La llamarada."));
         films.add(new Film(R.drawable.torr,"Torrente 5: Operación Eurovegas","Santiago Segura",2014,0,2,"https://www.imdb.com/title/tt3321428/?ref_=nv_sr_srsg_6_tt_7_nm_1_q_torrente","El policía corrupto Torrente sale de la cárcel en el año 2018 para encontrar una España diferente a la que conocía."));
-
+        films.add(new Film(R.drawable.tres300,"300","Zack Snyder",2006,0,2,"https://www.imdb.com/title/tt0416449/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_300","El rey Leónidas de Esparta y una fuerza de 300 hombres luchan contra los persas en las Termópilas en el año 480 a. C."));
     }
 }
 
