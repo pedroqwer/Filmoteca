@@ -20,24 +20,25 @@
 
             <EditText
                 android:id="@+id/ediciontitulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="306dp"
+                android:layout_height="56dp"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="text|textMultiLine"
                 android:text="Name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintHorizontal_bias="0.178"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.338" />
+                app:layout_constraintVertical_bias="0.332" />
 
             <EditText
                 android:id="@+id/edicioncomentario"
                 android:layout_width="381dp"
                 android:layout_height="105dp"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="text|textMultiLine"
+                android:singleLine="false"
                 android:text="Name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -47,45 +48,45 @@
 
             <EditText
                 android:id="@+id/ediciondirector"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="308dp"
+                android:layout_height="58dp"
                 android:ems="10"
                 android:inputType="text"
                 android:text="Name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintHorizontal_bias="0.181"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.428" />
+                app:layout_constraintVertical_bias="0.438" />
 
             <EditText
                 android:id="@+id/editarnimb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="308dp"
+                android:layout_height="63dp"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="text|textMultiLine"
                 android:text="Name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintHorizontal_bias="0.192"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.601" />
+                app:layout_constraintVertical_bias="0.65" />
 
             <EditText
                 android:id="@+id/edicionAño"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="304dp"
+                android:layout_height="53dp"
                 android:ems="10"
                 android:inputType="text"
                 android:text="Name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintHorizontal_bias="0.197"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.516" />
+                app:layout_constraintVertical_bias="0.55" />
 
             <Button
                 android:id="@+id/C.imagen"

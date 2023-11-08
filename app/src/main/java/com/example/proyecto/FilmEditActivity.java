@@ -35,22 +35,11 @@ public class FilmEditActivity extends AppCompatActivity {
 
         TextView commm=findViewById(R.id.edicioncomentario);
         commm.setText(film.getComments());
-/*
-        Button bo=findViewById(R.id.botonenlace);
-        bo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url=film.getImdbUrl();
 
-                Uri uri=Uri.parse(url);
+        TextView imb=findViewById(R.id.editarnimb);
+        imb.setText(film.getImdbUrl());
 
-                Intent intent1=new Intent(Intent.ACTION_VIEW,uri);
-                if(intent1.resolveActivity(getPackageManager())!=null){
-                    startActivity(intent1);
-                }
-            }
-        });
-*/
+
         ImageView imm=findViewById(R.id.imageView);
         imm.setImageResource(film.getImageResId());
 
