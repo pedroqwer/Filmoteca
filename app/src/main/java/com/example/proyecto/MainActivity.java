@@ -32,10 +32,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // Acción al clickar sobre un elemento determinado
         Intent intent = new Intent(MainActivity.this, FilmDataActivity.class);
         intent.putExtra("FILM_POSITION", position);
-        Toast.makeText(getApplicationContext(),"Elemento selecionado "+position, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Película selecionada : "+FilmDataSource.films.get(position).getTitle(), Toast.LENGTH_LONG).show();
         if (intent.resolveActivity(getPackageManager()) != null){
             startActivity(intent);
         }
+
     }
 
     @Override

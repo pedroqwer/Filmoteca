@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class FilmDataActivity extends AppCompatActivity {
+public class FilmDataActivity extends AppCompatActivity  {
 
     Button volver;
 
@@ -81,13 +82,15 @@ public class FilmDataActivity extends AppCompatActivity {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Toast.makeText(getApplicationContext(), "Has vuelto al inicio", Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(FilmDataActivity.this,MainActivity.class);
                 startActivity(i);
-
             }
+
+
+
         });
+
 
         editar=(Button) findViewById(R.id.edit);
 
@@ -95,12 +98,17 @@ public class FilmDataActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 Toast.makeText(getApplicationContext(), "Edición de película", Toast.LENGTH_SHORT).show();
 
+
                 Intent intent=new Intent(FilmDataActivity.this, FilmEditActivity.class);
+                intent.putExtra("FILM_POSITION", posicion);
                 startActivity(intent);
 
+
             }
+
         });
 
     }
@@ -135,4 +143,7 @@ public class FilmDataActivity extends AppCompatActivity {
       }
 
     }
+
+
+
 }
