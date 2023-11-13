@@ -14,6 +14,11 @@ import java.util.ArrayList;
 
 public class FilmEditActivity extends AppCompatActivity {
 
+    Button guardar;
+
+    Button select,cap;
+    Button cancelar;
+    
     private Film film;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +56,43 @@ public class FilmEditActivity extends AppCompatActivity {
 
         TextView gen=findViewById(R.id.G);
         gen.setText(Genero(film.getGenre()));*/
+   guardar=(Button) findViewById(R.id.guardar);
+        guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent1=new Intent(FilmEditActivity.this,FilmListActivity.class);
+                startActivity(intent1);
+                Toast.makeText(getApplicationContext(),"Cambios aplicados correctamente", Toast.LENGTH_LONG).show();
+            }
+        });
+        cancelar=(Button) findViewById(R.id.cancelar);
+        cancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent1=new Intent(FilmEditActivity.this,FilmListActivity.class);
+                startActivity(intent1);
+                Toast.makeText(getApplicationContext(),"Los cambios han sido cancelados", Toast.LENGTH_LONG ).show();
+            }
+        });
+
+        select=(Button) findViewById(R.id.Captura_imagen);
+        select.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getApplicationContext(),"Funcionalidad no implementada", Toast.LENGTH_LONG ).show();
+            }
+        });
+
+        cap=(Button) findViewById(R.id.selectt);
+
+        cap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Funcionalidad no implementada", Toast.LENGTH_LONG ).show();
+            }
+        });
     }
 }
