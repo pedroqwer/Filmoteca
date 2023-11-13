@@ -83,22 +83,22 @@
                 android:text="Name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.197"
+                app:layout_constraintHorizontal_bias="0.155"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.55" />
+                app:layout_constraintVertical_bias="0.54" />
 
             <Button
-                android:id="@+id/C.imagen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
+                android:id="@+id/Captura_imagen"
+                android:layout_width="118dp"
+                android:layout_height="78dp"
+                android:text="CAPTURA IMAGEN"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.531"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.082" />
+                app:layout_constraintVertical_bias="0.085" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -106,29 +106,29 @@
                 android:layout_height="173dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintHorizontal_bias="0.014"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058"
+                app:layout_constraintVertical_bias="0.056"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <Button
-                android:id="@+id/S.imagen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
+                android:id="@+id/selectt"
+                android:layout_width="131dp"
+                android:layout_height="82dp"
+                android:text="SELECCIONA IMAGEN"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.898"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.081" />
+                app:layout_constraintVertical_bias="0.08" />
 
             <Button
                 android:id="@+id/cancelar"
                 android:layout_width="170dp"
                 android:layout_height="44dp"
-                android:text="Button"
+                android:text="Cancelar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.054"
@@ -140,7 +140,7 @@
                 android:id="@+id/guardar"
                 android:layout_width="170dp"
                 android:layout_height="44dp"
-                android:text="Button"
+                android:text="Guardar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.932"
