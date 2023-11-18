@@ -26,29 +26,29 @@ public class FilmEditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_film_edit);
 
 
-        Intent intent=getIntent();
+       Intent intent=getIntent();
         int posicion=intent.getIntExtra("FILM_POSITION",0);
 
 
         film=FilmDataSource.films.get(posicion);
 
-        TextView tit=findViewById(R.id.ediciontitulo);
+        EditText tit=findViewById(R.id.ediciontitulo);
         tit.setText(film.getTitle());
 
-        TextView dir=findViewById(R.id.ediciondirector);
+        EditText dir=findViewById(R.id.ediciondirector);
         dir.setText(film.getDirector());
 
-        TextView commm=findViewById(R.id.edicioncomentario);
+        EditText commm=findViewById(R.id.edicioncomentario);
         commm.setText(film.getComments());
 
-        TextView imb=findViewById(R.id.editarnimb);
+        EditText imb=findViewById(R.id.editarnimb);
         imb.setText(film.getImdbUrl());
 
 
         ImageView imm=findViewById(R.id.imageView);
         imm.setImageResource(film.getImageResId());
 
-        TextView any =findViewById(R.id.edicionAño);
+        EditText any =findViewById(R.id.edicionAño);
         any.setText(String.valueOf(film.getYear()));
 
       /*  TextView form=findViewById(R.id.F);
@@ -56,14 +56,35 @@ public class FilmEditActivity extends AppCompatActivity {
 
         TextView gen=findViewById(R.id.G);
         gen.setText(Genero(film.getGenre()));*/
-   guardar=(Button) findViewById(R.id.guardar);
+
+        guardar=(Button) findViewById(R.id.guardar);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent1=new Intent(FilmEditActivity.this,FilmListActivity.class);
-                startActivity(intent1);
+                Guardarcambios(
+                        tit.getText().toString(),
+                        dir.getText().toString(),
+                        commm.getText().toString(),
+                        any.getText().toString(),
+                        imb.getText().toString()
+                        );
+                /*Intent intent1=new Intent(FilmEditActivity.this,FilmListActivity.class);
+                startActivity(intent1);*/
+
+                finish();
+
                 Toast.makeText(getApplicationContext(),"Cambios aplicados correctamente", Toast.LENGTH_LONG).show();
+            }
+
+            private void Guardarcambios(String titulo, String director, String comentario, String anyo, String imb) {
+                film.setTitle(titulo);
+                film.setDirector(director);
+                film.setComments(comentario);
+                film.setYear(Integer.parseInt(anyo));
+                film.setImdbUrl(imb);
+
+
             }
         });
         cancelar=(Button) findViewById(R.id.cancelar);
