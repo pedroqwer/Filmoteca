@@ -36,10 +36,13 @@ public class AboutActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://mail.google.com/mail/u/0/#inbox";
 
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_SEND);
+
+                intent.setType("Text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Soporte Filmoteca");
+                intent.putExtra(Intent.EXTRA_TEXT, "Texto del correo de soporte");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"filmoteca@pmdm.es"});
 
                 startActivity(intent);
 
